@@ -23,13 +23,32 @@ function hasEnglish (string) {
 function arrays (array) {
 
     var positiveArr = 0;
-    var negativeArr = [];
+    var negativeArr = 0;
+    var outputArr = []
 
     for (var i = 0; i < array.length; i++) {
+        if (i == null || i == []) {
+            return negativeArr;
+        }
         if (i > 0) {
             positiveArr++;
         } else if (i < 0) {
             negativeArr += i;
         }
+    }
+    return outputArr[positiveArr, negativeArr];
+}
+
+// Write a function that translates an input string by replacing each character with a number representing the amount of times that character appears in the string. Then separate each individual number with a different character.
+
+// Examples:
+// Input: "hello world", "-" | Output: "1-1-3-3-2-1-1-2-1-3-1"
+// Input: "challenge", "/" | Output: "1/1/1/2/2/2/1/1/2"
+
+function inputCount (string) {
+
+    var timesOutput = "";
+    for (var i = 0; i < string.length; i++) {
+
     }
 }
