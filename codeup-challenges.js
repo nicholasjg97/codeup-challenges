@@ -7,10 +7,12 @@
 function hasEnglish (string) {
 
     for (var i = 0; i < string.length; i++) {
-        if (string == "english") {
+        const english = "engish"
+        if (string.includes(english)) {
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 }
 
@@ -33,7 +35,7 @@ function arrays (array) {
         if (i > 0) {
             positiveArr++;
         } else if (i < 0) {
-            negativeArr += i;
+            negativeArr += array[i];
         }
     }
     return outputArr[positiveArr, negativeArr];
@@ -52,3 +54,17 @@ function inputCount (string) {
 
     }
 }
+
+// Write a function to calculate a person’s age based on the date entered in the format MM/DD/YYYY.
+
+// Example:
+// Input: 11/04/1982
+// Output: 34
+
+function calcAge () {
+
+    var userInput = prompt("Please enter your age in MM/DD/YYYY please!");
+    var age = (userInput - 2022) * -1;
+    return age;
+}
+
