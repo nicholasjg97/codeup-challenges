@@ -68,3 +68,18 @@ function calcAge () {
     return age;
 }
 
+// Write a function to remove these special characters from a string: ~,!,$,&,%, ,#,@,-,_,^,? (yes, "space" is a character in that list)
+
+// Examples:
+// Input: "Happy ~!&$%#@- Halloween" | Output: "HappyHalloween"
+// Input: "I’ll bet living in a nudist-colony takes all the fun out of Halloween!!" | Output: "IllbetlivinginanudistcolonytakesallthefunoutofHalloween"
+
+function noSpace (string) {
+
+    var special = '~,!,$,&,%, ,#,@,-,_,^,?';
+    for (var i = 0; i < string.length; i++) {
+        if (string[i].includes(special)) {
+            
+        }
+    }
+}
