@@ -74,12 +74,17 @@ function calcAge () {
 // Input: "Happy ~!&$%#@- Halloween" | Output: "HappyHalloween"
 // Input: "I’ll bet living in a nudist-colony takes all the fun out of Halloween!!" | Output: "IllbetlivinginanudistcolonytakesallthefunoutofHalloween"
 
-function noSpace (string) {
-
-    var special = '~,!,$,&,%, ,#,@,-,_,^,?';
-    for (var i = 0; i < string.length; i++) {
-        if (string[i].includes(special)) {
-            
-        }
-    }
+function noSpecials (string) {
+    string.replace(/[^a-zA-Z0-9]/g, '');
+    return string;
 }
+
+// Write a function to convert a string into an array of words.
+
+// Example:
+// Input: "Trick or Treat"
+// Output: [‘Trick’, ‘or’, ‘Treat’]
+
+function splice (str) {
+    return str.trim().split(" ");
+};
