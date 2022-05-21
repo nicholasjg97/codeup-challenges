@@ -88,3 +88,14 @@ function noSpecials (string) {
 function splice (str) {
     return str.trim().split(" ");
 };
+
+// Write a function called "multiply" that takes two integers and returns the product. You are NOT allowed to use the * operator or any imported multiplication function. We will check your code.
+
+// Example:
+// Input: multiply(5, 6) | Output: 30
+// Input: multiply(-1, 15) | Output: -15
+// Input: multiply(-2, -7) | Output: 14
+
+function multiply (a, b){
+    return ("i").repeat(a).repeat(b).length;
+}
