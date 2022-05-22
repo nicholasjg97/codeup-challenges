@@ -85,8 +85,8 @@ function noSpecials (string) {
 // Input: "Trick or Treat"
 // Output: [‘Trick’, ‘or’, ‘Treat’]
 
-function splice (str) {
-    return str.trim().split(" ");
+function splice (string) {
+    return string.trim().split(" ");
 };
 
 // Write a function called "multiply" that takes two integers and returns the product. You are NOT allowed to use the * operator or any imported multiplication function. We will check your code.
@@ -98,4 +98,24 @@ function splice (str) {
 
 function multiply (a, b){
     return ("i").repeat(a).repeat(b).length;
+}
+
+// Write a function that takes a string and returns true if all of the characters are the same case, false otherwise.
+
+// Examples:
+// Input: "hello world" | Output: true
+// Input: "HELLO WORLD" | Output: true
+// Input: "HeLLo wORld" | Output: false
+
+function sameCase (string) {
+
+    for (var i = 0; i < string .length; i++) {
+        if (string[i] === string[i].toUpperCase()) {
+            return true;
+        } else if (string[i] === string[i].toLowerCase()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
