@@ -119,3 +119,24 @@ function sameCase (string) {
         }
     }
 }
+
+// Write a function that takes an array of integers and returns an array of integers where each number is the sum of itself and all of the previous numbers in the array.
+
+// Example:
+// Input: [1, 1, 1] | Output: [1, 2, 3]
+// Input: [4, 2, 1, 3, 5] | Output: [4, 6, 7, 10, 15]
+
+function arrayAdd (array) {
+
+    for (var i = 0; i < array.length; i++) {
+        // if (i < 1) return 0;    // exit condition
+    // return n  + sum(n - 1); 
+    // tricky question
+    }
+}
+
+// Write a function that takes a phone number with letters in it and converts it to one with only numbers. All input phone numbers will follow this pattern: "###-###-####" (Hint: Search for "phone keypad")
+
+// Examples:
+// Input: 210-367-CODE | Output: 210-367-2633
+// Input: TRY-THE-FOOD | Output: 879-843-3663
