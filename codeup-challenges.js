@@ -140,3 +140,20 @@ function arrayAdd (array) {
 // Examples:
 // Input: 210-367-CODE | Output: 210-367-2633
 // Input: TRY-THE-FOOD | Output: 879-843-3663
+
+function phoneNum (e) {
+
+    var input = this.value.toLowerCase();
+    var map = [' ',,'abc','def','ghi','jkl','mno','pqrs','tuv','wxyz'], out = [];
+
+    for (var i = 0; i < input.length; i++) {
+        for (var j = 0; j < map.length; j++) {
+            if (map[j] && map[j].indexOf(v[i]) > -1) {
+                out.push(j);
+                break;
+            }
+        }
+        return out;
+    }
+    // https://stackoverflow.com/questions/14818204/how-to-convert-letters-to-numbers-in-javascript
+}
