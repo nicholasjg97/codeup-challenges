@@ -54,3 +54,44 @@ function longestPalindrome(s) {
     }
     return right - left - 1;
   }
+
+  // Write a function that finds the least number of perfect squares that add up to the given integer
+
+  // Examples:
+// Input: 12 | Output:3 (4 + 4 + 4)
+// Input: 13 | Output: 2 (4 + 9)
+
+
+
+// Write a function that will divide two integers without using the multiplication, division, or modulo operators
+
+function divide (a, b) {
+
+  var dividend = a;
+  var divisor = b;
+
+  // Calculate sign of divisor
+  var sign = (dividend < 0) ^ (divisor < 0) ? -1 : 1;
+
+  // Remove signs
+  dividend = Math.abs(dividend);
+  divisor = Math.abs(divisor);
+
+  // Zero division exception
+  if (divisor == 0) {
+    alert("Cannot divide by 0");
+    return;
+  }
+
+  if (dividend == 0) {
+    alert(a + ' / ' + b + " is equal to : " + 0 );
+    return;
+  }
+
+  if (divisor == 1) {
+    alert(a + " / " + b + " is equal to : " + sign * dividend)
+    return;
+  }
+
+  alert(a + " / " + b + " is equal to : " + Math.floor(sign * (Math.exp(Math.log(dividend) - Math.log(divisor)))) + "<br>");
+}
