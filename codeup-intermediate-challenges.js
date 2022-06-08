@@ -127,3 +127,24 @@ function romanNum (string) {
   }
   return total;
 }
+
+// Given an integer parameter, write a function that will return the next greater number using the same digits.
+
+// Example:
+// Input: 230 | Output: 302
+// https://www.geeksforgeeks.org/find-next-greater-number-set-digits/
+// Question is a bit complicated
+
+function sameNumsHigher (int, n) {
+  for (var i = n - 1; i >= 0; i--) {
+    if (int[i] > int[i - 1]){
+      break;
+    }
+  }
+
+  if (i == 1 && int[i] <= int[i - 1]) {
+    alert("Next number not possible");
+  }
+
+  
+}
