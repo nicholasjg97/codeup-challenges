@@ -148,3 +148,32 @@ function sameNumsHigher (int, n) {
 
   
 }
+
+// Write a function that determines whether or not a given string is a valid password. A password must follow these rules:
+
+// It must have a capital letter.
+
+// It must have at least one number.
+
+// It must contain a punctuation mark.
+
+// It cannot have the word "password" in it.
+
+// It must be longer than 7 characters and shorter than 21 characters.
+
+// Examples:
+// Input: passWord101! | Output: false
+// Input: codE35? | Output: true
+
+// https://stackoverflow.com/questions/62727011/javascript-functions-that-validates-password-coderbyte-coding-challenge-simple
+
+function password (input) {
+
+  let capitalCheck = /[A-Z]/g.test(input);
+  let numberCheck = /[0-9]/g.test(input);
+  let punctuationCheck = /[.?!:,;]/g.test(input);
+  let passwordCheck = !/password/gi.test(input);
+  let charCheck = input.length > 7 && input.length < 21;
+
+  return charCheck && punctuationCheck && passwordCheck && numberCheck && capitalCheck;
+}
