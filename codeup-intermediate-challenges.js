@@ -177,3 +177,18 @@ function password (input) {
 
   return charCheck && punctuationCheck && passwordCheck && numberCheck && capitalCheck;
 }
+
+// Write a function that capitalizes the first letter of each word in a string.
+
+// https://www.freecodecamp.org/news/how-to-capitalize-words-in-javascript/#:~:text=In%20JavaScript%2C%20we%20have%20a,%22%3B%20publication%5B0%5D.
+
+function capWords (string) {
+
+  const words = sting.split(" ");
+
+  for (var i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words.substr(1);
+  }
+
+  words.join(" ");
+}
