@@ -192,3 +192,12 @@ function capWords (string) {
 
   words.join(" ");
 }
+
+// Write a function that changes every letter in a string to the next letter in the alphabet. Capital letters must remain capitalized.
+
+function nextLetter (str) {
+
+  return str.replace(/[a-zA-Z]/g, function (x) {
+    return String.fromCharCode(x.charCodeAt(0)+1);
+  });
+}
