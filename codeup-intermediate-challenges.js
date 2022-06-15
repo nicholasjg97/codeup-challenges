@@ -201,3 +201,13 @@ function nextLetter (str) {
     return String.fromCharCode(x.charCodeAt(0)+1);
   });
 }
+
+// Build a pyramid using the characters from a given string.
+
+function pyramid (str) {
+
+  for (var i = 1; i <= str; i++) {
+    let string = ' '.repeat(str - i);
+    let string2 = '*'.repeat(i * 2 - 1);
+  }
+}
