@@ -211,3 +211,18 @@ function pyramid (str) {
     let string2 = '*'.repeat(i * 2 - 1);
   }
 }
+
+// Given an integer, determine whether or not the number is a perfect square.
+
+// Examples:
+// Input: 3 | Output:false
+// Input: 25 | Output: true
+
+function square (int) {
+
+  if (Math.ceil(Math.sqrt(int)) == Math.floor(Math.sqrt(int))) {
+    return true;
+  } else {
+    return false;
+  }
+}
