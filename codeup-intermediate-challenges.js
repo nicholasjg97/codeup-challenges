@@ -226,3 +226,15 @@ function square (int) {
     return false;
   }
 }
+
+// Write a function that takes a single string as its argument and returns an ordered list of the indexes of all capital letters in the string. Assume that all input will have at least one capital letter.
+
+// Example:
+// Input: HelLO | Output:0,3,4
+// Input: codinG | Output: 5
+
+function capCount (str) {
+
+  const array = str.split("");
+  const arrayOrder = array.map(function)
+}
