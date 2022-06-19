@@ -235,6 +235,15 @@ function square (int) {
 
 function capCount (str) {
 
-  const array = str.split("");
-  const arrayOrder = array.map(function)
+  var list = [];
+  if (str.split(" ").length > 1) {
+    alert("Too many words");
+  } else {
+    for (var i = 0; i < str.length; i++) {
+      if (str[i] == str[i].toUpperCase()) {
+        list.push(i);
+      }
+    }
+  }
+  return list;
 }
