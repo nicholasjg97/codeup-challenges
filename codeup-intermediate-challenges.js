@@ -247,3 +247,16 @@ function capCount (str) {
   }
   return list;
 }
+
+// ATMs only allow for 4 or 6 digit PINs. These PINs can only contain integers. Write a function that takes a PIN and checks to see if it is valid.
+
+// Example:
+// Input: 8472 | Output:true
+// Input: 76a1 | Output: false
+
+function validPIN (int) {
+  
+  return typeof int === 'string' && 
+  Number.isInteger(+int) && 
+  [4, 6].includes(pin.length);
+}
