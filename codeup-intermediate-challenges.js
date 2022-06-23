@@ -260,3 +260,17 @@ function validPIN (int) {
   Number.isInteger(+int) && 
   [4, 6].includes(pin.length);
 }
+
+// Determine whether or not a word is an anagram of another. Return true if it is, and false if it is not.
+
+// Example:
+// Input: deco, code | Output:true
+// Input: last, nope | Output: false
+
+function anagram (str1, str2) {
+
+  let firstWord = str1.toLowerCase().replace(/[^a-z]/g, '').split('').sort().join('')
+  let secondWord = str2.toLowerCase().replace(/[^a-z]/g, '').split('').sort().join('')
+
+  return (firstWord === secondWord);
+}
