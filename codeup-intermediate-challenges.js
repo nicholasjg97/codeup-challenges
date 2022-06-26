@@ -274,3 +274,18 @@ function anagram (str1, str2) {
 
   return (firstWord === secondWord);
 }
+
+// Write a function that returns the shortest word in a string. Ignore punctuation. If there are two or more words that are the same length, return the LAST word from the string with that length.
+// a. Input: "My phone battery is always dead"
+//     Answer: is
+// b. Input: "Travis wears a parka in the office"
+//     Answer: a
+
+function shortestWord (string) {
+
+  const strArr = string.split(" ");
+  const orderArr = strArr.sort((a, b) => {
+    return a.length - b.length;
+  })
+  return orderArr[0];
+}
