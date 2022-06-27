@@ -289,3 +289,21 @@ function shortestWord (string) {
   })
   return orderArr[0];
 }
+
+// Write a function to find the TWO highest values in an array..
+// a.  Example [ 12, 34, 56, 1 ]
+//     Answer: 34, 56
+// b.  Example[ 0, -12,-34, -50,-1 ]
+//     Answer: 0, -1
+
+function twoHighest (arr) {
+
+
+  arr.sort((firstNum, secondNum) => {
+    firstNum - secondNum;
+  });
+  const firstHigh = arr.length - 1;
+  const secondHigh = arr.length - 2;
+
+  return [firstHigh, secondHigh];
+}
