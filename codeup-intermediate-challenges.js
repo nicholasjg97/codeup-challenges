@@ -307,3 +307,33 @@ function twoHighest (arr) {
 
   return [firstHigh, secondHigh];
 }
+
+// Write a function to get the least common denominator (LCD) of an array of numbers.
+// a. Example: [ 1, 1/2, 3/8, 5/6, 3 ]
+//     Answer: 24
+// b.  Example: [ 1/3, 5/6, 12/60 ]
+//     Answer: 60
+
+function LCD (arr) {
+
+  var r1 = 0;
+  var r2 = 0;
+  var l = arr.length;
+
+  for (var i = 0; i < l; i++) {
+
+    r1 = arr[i] % arr[i + 1];
+    if(r1 === 0) {
+      arr[i + 1] = (arr[i] * input_array[i+1]) / arr[i + 1];
+    } else {
+      r2 = arr[i + 1] % r1;
+      if(r2 === 0) {
+          arr[i + 1] = (arr[i] * arr[i + 1]) / r1;
+      }
+      else {
+          arr[i+1] = (arr[i] * arr[i + 1]) / r2;
+      }
+    }
+  }
+  return arr[l - 1];
+}
