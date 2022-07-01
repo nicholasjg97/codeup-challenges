@@ -337,3 +337,18 @@ function LCD (arr) {
   }
   return arr[l - 1];
 }
+
+// Write a function to find the TWO highest values in an array..
+// a.  Example [ 12, 34, 56, 1 ]
+//     Answer: 34, 56
+// b.  Example[ 0, -12,-34, -50,-1 ]
+//     Answer: 0, -1
+
+function highestValues (arr) {
+
+  firstLargestNumber = Math.max(...arr)
+  index = arr.indexOf(firstLargestNumber)
+  arr.splice(index, 1)
+  secondLargestNumber = Math.max(...arr);
+  return (firstLargestNumber, secondLargestNumber);
+}
