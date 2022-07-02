@@ -346,9 +346,8 @@ function LCD (arr) {
 
 function highestValues (arr) {
 
-  firstLargestNumber = Math.max(...arr)
-  index = arr.indexOf(firstLargestNumber)
-  arr.splice(index, 1)
-  secondLargestNumber = Math.max(...arr);
+  arr.sort();
+  firstLargestNumber = arr.length - 1
+  secondLargestNumber = arr.length - 2;
   return (firstLargestNumber, secondLargestNumber);
 }
